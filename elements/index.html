@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>easy.css - éléments & modules</title>
+	<link rel="stylesheet" href="easy.css">
+	<link rel="stylesheet" href="../style.css">
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		function myFunction() {
+    var x = document.getElementById("links");
+    var y = document.getElementById("resp"); 
+    if (x.style.display === "none") {
+        x.style.display = "block";   
+    } else {
+        x.style.display = "none";
+    }
+} 
+	</script>
+</head>
+<body>
+<div class="header">
+	<h1>easy.css</h1>
+	<h2>éléments & modules</h2>
+</div>
+<div class="show-content">
+	<div class="section">
+		<h1 class="section">Navigation</h1>
+		<nav>
+		<ul class="nav-left">
+			<li>Navigation</li>
+		</ul>
+		<ul class="nav-right" id="links">
+			<li>Accueil</li>
+			<li>A propos</li>
+			<li>Télécharger</li>
+		</ul>
+		<ul class="resp" id="resp">
+		<li class="pull" onclick="myFunction()">☰</li>
+		</ul>
+	</nav>
+	</div>
+	<div class="section">
+		<h1 class="section">Typographie</h1>
+		<h1>Ceci est le plus grand titre</h1>
+		<h2>Ceci est le second plus grand titre</h2>
+		<h3>Ceci est le troisième plus grand titre</h3>
+		<h4>Et ainsi...</h4>
+		<h5>De suite</h5>
+		<h1 class="title">Ceci est un titre</h1>
+		<h2 class="sub">Ceci est un sous-titre</h2>
+		<h1 class="small-title">Ceci est un titre (mais plus petit)</h1>
+		<h2 class="small-sub">Ceci est un sous-titre (mais plus petit)</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit. Voluptatem commodi, blanditiis, illum distinctio asperiores minima debitis ab mollitia natus dicta cumque <a href="#">eaque</a>! Consectetur, cumque nisi eligendi dignissimos omnis sed asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consequuntur tempore harum, nulla repellat! Accusamus est fuga vitae dolorum non aut magnam, nulla eveniet nobis <a href="#">praesentium</a> ab dolorem explicabo officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur earum magni esse, ipsum aspernatur natus modi dicta nemo officiis sit repellat qui rem! Deleniti consequuntur illum sint expedita tempore quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo omnis a adipisci dolores recusandae sed culpa ea quia accusamus cum <a href="#">maiores</a> illo rerum incidunt magni, aliquid laudantium architecto deleniti, praesentium!</p>
+		<blockquote>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nam! Blanditiis ipsum officia beatae impedit amet iure ut saepe similique quia natus, quasi rem, odit minima culpa! Quas, ut, ipsam. Consectetur adipisicing elit. Sed maiores impedit eligendi quidem fuga ipsa mollitia aspernatur assumenda. <small><i>Quelqu'un de connu</i></small>
+		</blockquote>
+		<pre>
+function calcul() {
+  mA=inputA.value(); 
+  mB=inputB.value();
+  d=inputC.value(); 
+  F = G*((mA*mB)/(d*d));
+  F = F.toPrecision([3]); 
+  res = createElement('h1','F = ' + F + " N");
+  res.position(0,315);
+}</pre>
+		<div class="lists">
+			<ul>
+				<li>200g de chocolat noir pâtissier</li>
+				<li>100g de beurre</li>
+				<li>6 oeufs</li>
+			</ul>
+			<ul class="numbers">
+				<li>Préchauffez le four à 180°C</li>
+				<li>Faire fondre le chocolat au bain marie</li>
+				<li>Faire fondre le beurre au micro-ondes</li>
+				<li>Mélanger le beurre et le chocolat</li>
+				<li>Battre les oeufs en neige</li>
+				<li>Incorporer délicatement les oeufs en neige au mélange beurre + chocolat</li>
+				<li>Verser dans des pots, et conserver 3h (minimum) au réfrégirateur</li>
+			</ul>
+		</div>
+	</div>
+	<div class="section">
+		<h1 class="section">Boutons</h1>
+	<div class="button-list">
+		<a href="#" class="button">Bouton basique</a>
+		<a href="#" class="button red">Bouton rouge</a>
+		<a href="#" class="button green">Bouton vert</a>
+		<a href="#" class="button blue">Bouton bleu</a>
+		<br>
+		<a href="#" class="button big">Grand bouton</a>
+		<a href="#" class="button small">Petit bouton</a>
+		<br>
+		<button type="button" class="button disabled" disabled>Bouton désactivé</button>
+	</div>
+
+</div>
+	<div class="section">
+			<h1 class="section">Images</h1>
+	<p class="section">Ajustée</p>
+	<img src="https://unsplash.it/1366/600?image=116" alt="" class="fit">
+		<p class="section">Galerie</p>
+	<div class="gallery">
+		<div class="gallery-element">
+			<img src="https://unsplash.it/400/250?image=1022" alt="">
+		</div>
+		<div class="gallery-element">
+			<img src="https://unsplash.it/400/250?image=1023" alt="">
+		</div>
+		<div class="gallery-element">
+			<img src="https://unsplash.it/400/250?image=1024" alt="">
+		</div>
+		<div class="gallery-element">
+			<img src="https://unsplash.it/400/250?image=1025" alt="">
+		</div>
+		<div class="gallery-element">
+			<img src="https://unsplash.it/400/250?image=1026" alt="">
+		</div>
+		<div class="gallery-element">
+			<img src="https://unsplash.it/400/250?image=1027" alt="">
+		</div>
+		<div class="gallery-element">
+			<img src="https://unsplash.it/400/250?image=1028" alt="">
+		</div>
+		<div class="gallery-element">
+			<img src="https://unsplash.it/400/250?image=1029" alt="">
+		</div>
+	</div>
+	<div class="align-exemple">
+		<p class="section">Alignée à droite / alignée à gauche</p>
+		<p class="img-right"><img src="https://unsplash.it/400/250?image=83" alt="image easy.css">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolores cum dicta quasi commodi, ad temporibus voluptatum eligendi blanditiis a. Quo adipisci quidem quas nobis. Possimus accusamus temporibus, molestiae esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quidem libero possimus dolorum, et iure beatae vitae fugiat atque aliquid explicabo cum incidunt velit provident quisquam pariatur doloribus eos! Quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore eos facere, cumque eum ab necessitatibus maiores minus. Repudiandae dolorum non error, molestias.</p>
+		<p class="img-left"><img src="https://unsplash.it/400/250?image=81" alt="image easy.css"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolores cum dicta quasi commodi, ad temporibus voluptatum eligendi blanditiis a. Quo adipisci quidem quas nobis. Possimus accusamus temporibus, molestiae esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quidem libero possimus dolorum, et iure beatae vitae fugiat atque aliquid explicabo cum incidunt velit provident quisquam pariatur doloribus eos! Quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore eos facere, cumque eum ab necessitatibus maiores minus. Repudiandae dolorum non error.</p>
+	</div>
+	</div>
+	<div class="section">
+		<h1 class="section">Formulaires</h1>
+	<form action="#" method="post">
+		<h1 class="form-title">Formulaire de contact</h1>
+		<h2 class="form-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+		<input type="text" placeholder="Nom complet">
+	<input type="email" placeholder="Adresse mail">
+	<input type="password" placeholder="Mot de passe">
+	<textarea name="textbox" id="" cols="30" rows="6" placeholder="Votre long message..."></textarea>
+	<div class="radio_checkb-block">
+			<div class="radio-block">
+		<p>Mes options</p>
+		<label class="radio_itm radio_itm-radio">
+		Première option
+		<input type="radio" name="radio" checked="checked" />
+		<div class="radio_itm_indicator"></div>
+		</label>
+		<label class="radio_itm radio_itm-radio">
+		Seconde option
+		<input type="radio" name="radio" />
+		<div class="radio_itm_indicator"></div>
+		</label>
+		<label class="radio_itm radio_itm-radio">
+		Désactivée
+		<input type="radio" name="radio2" disabled="disabled" />
+		<div class="radio_itm_indicator"></div>
+		</label>
+		<label class="radio_itm radio_itm-radio">
+		Séléctionnée et désactivée
+		<input type="radio" name="radio2" disabled="disabled" checked="checked" />
+		<div class="radio_itm_indicator"></div>
+		</label>
+	</div>
+	<div class="checkbox-block">
+		<p>Mes choix</p>
+		<label class="checkb_itm checkb_itm-checkbox">
+		Première checkbox
+		    <input type="checkbox" checked="checked" />
+		<div class="checkb_itm_indicator"></div>
+		</label>
+		<label class="checkb_itm checkb_itm-checkbox">
+		Seconde checkbox
+		    <input type="checkbox" />
+		<div class="checkb_itm_indicator"></div>
+		</label>
+		<label class="checkb_itm checkb_itm-checkbox">
+		Désactivé
+		    <input type="checkbox" disabled="disabled" />
+		<div class="checkb_itm_indicator"></div>
+		</label>
+		<label class="checkb_itm checkb_itm-checkbox">
+		Désactivé & coché
+		    <input type="checkbox" disabled="disabled" checked="checked" />
+		<div class="checkb_itm_indicator"></div>
+		</label>
+	</div>
+	</div>
+	<button type="submit" class="button">Envoyer</button>
+	</form>
+	</div>
+	<div class="section">
+			<h1 class="section">Tableaux</h1>
+		<table>
+			<tr>
+				<th>Modèle</th>
+				<th>Marque</th>
+				<th>Nationalité</th>
+			</tr>
+			<tr>
+				<td>iPhone</td>
+				<td>Apple</td>
+				<td>Américaine</td>
+			</tr>
+			<tr>
+				<td>Galaxy S</td>
+				<td>Samsung</td>
+				<td>Corée du Sud</td>
+			</tr>
+			<tr>
+				<td>View</td>
+				<td>Wiko</td>
+				<td>France</td>
+			</tr>
+			<tr>
+				<td>1080</td>
+				<td>Nokia</td>
+				<td>Suède</td>
+			</tr>
+			<tr>
+				<td>Wave</td>
+				<td>BlackBerry</td>
+				<td>Canada</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>Honor (Huawei)</td>
+				<td>Chine</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<p class="footer">easy.css - réalisé par <a href="http://albchr.ml">Alban Bleicher</a> - images : <a href="http://unsplash.com">unsplash</a><br>Voir une <a href="../example">page d'exemple</a></p>
+</body>
+</html>
