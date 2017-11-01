@@ -181,7 +181,6 @@ html, body {
 } 
 *:focus {
 	outline: 0 none;
-	border: transparent;
 }
 button:disabled {
 	cursor: not-allowed;
