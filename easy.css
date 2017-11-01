@@ -150,6 +150,9 @@ html, body {
 .checkb_itm-checkbox input:disabled ~ .checkb_itm_indicator:after {
     border-color: #7b7b7b;
 }
+*:focus {
+	outline: 0 none;
+}
 .button {
 	color: white;
 	background-color: #212121;
